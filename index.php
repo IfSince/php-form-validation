@@ -53,7 +53,7 @@ function formInput($data): string {
 
             <div class="input__box">
                 <label for="email">Email</label>
-                <input type="text" name="email" placeholder="Email" id="email">
+                <input type="text" name="email" placeholder="Email" id="email" value="<?php echo $email;?>">
                 <span class="error"><?php echo $emailErrors?></span>
             </div>
 

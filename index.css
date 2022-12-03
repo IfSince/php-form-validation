@@ -1,0 +1,105 @@
+:root {
+    --dark-gray: #131419;
+    --primary: #A66A74;
+    --txt-primary: #FFF;
+    --txt-default: #737373;
+    --error: #BF5D54;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'futura-pt', sans-serif;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /*background: linear-gradient(90deg, var(--darkblue), var(--clr-primary))*/
+    background: var(--dark-gray);
+}
+
+.form {
+    position: relative;
+    width: 350px;
+    padding: 40px 40px 60px;
+    background: var(--dark-gray);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: -5px -5px 10px rgba(255,255,255,0.05),
+                5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.form h2 {
+    color: var(--txt-primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.form .input {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.input__box {
+    margin-top: 20px;
+}
+
+.input__box label {
+    font-weight: 500;
+    display: block;
+    color: var(--txt-default);
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.input__box input::placeholder {
+    color: var(--primary);
+    opacity: 50%;
+}
+
+.input__box input, .input__box button {
+    width: 100%;
+    height: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    background: var(--dark-gray);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 5px 15px;
+    color: var(--primary);
+    box-shadow: inset -2px -2px 6px rgba(255,255,255,0.1),
+                inset 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+.input__box button {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: -2px -2px 6px rgba(255,255,255,0.1),
+                2px 2px 6px rgba(0,0,0,0.8);
+}
+
+.input__box button:active {
+    box-shadow: inset -2px -2px 6px rgba(255,255,255,0.1),
+                inset 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+.result {
+    margin-top: 50px;
+}
+
+.result__list {
+    color: var(--txt-default);
+}
+
+.error {
+    /*color: var(--error);*/
+    color: #BF5D54;
+}
